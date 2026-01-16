@@ -1,4 +1,3 @@
-## Picture
 # Echo-32![IMG_3754](https://github.com/user-attachments/assets/8ca6e15a-412a-45c2-ac06-b9eac08cb263)
 
 ESP32 ESP-NOW Chat Device with OLED &amp; Virtual Keyboard
