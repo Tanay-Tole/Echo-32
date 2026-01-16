@@ -37,6 +37,8 @@ Users can type messages using buttons and a virtual keyboard displayed on the OL
 Each board must have peer MAC set in firmware:
 uint8_t peerMAC[6] = {0xAA,0xBB,0xCC,0xDD,0xEE,0xFF};
 To find a board’s MAC, use this temporary sketch:
+
+```
 #include <WiFi.h>
 
 void setup() {
@@ -47,7 +49,7 @@ void setup() {
 }
 
 void loop() {}
-
+```
 
 
 
