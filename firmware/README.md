@@ -1,4 +1,4 @@
-# Echo-32 Firmware ReadMe
+# Echo-32 Firmware
 
 This folder contains the firmware for **Echo-32**, an ESP32-based wireless chat device using **ESP-NOW** and an **OLED display**.
 
