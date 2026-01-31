@@ -55,7 +55,7 @@ It allows two ESP32 boards to discover each other and exchange messages **withou
 ## 📌 Version History
 
 - **v1.0** – Initial ESP-NOW chat prototype
-- **v1.1** – UI improvements, discovery system, buzzer alerts
+- **v1.1** – UI improvements, discovery system, buzzer alerts, Peer to Peer, improved range
 
 ---
 
