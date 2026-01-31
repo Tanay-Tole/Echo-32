@@ -4,6 +4,9 @@
 It allows two ESP32 boards to discover each other and exchange messages **without Wi-Fi or internet**.
 
 ---
+![IMG_3763](https://github.com/user-attachments/assets/27785f7f-7414-402f-8737-ab0ebedb294a)
+![IMG_3762](https://github.com/user-attachments/assets/3316e18c-8126-493c-b0ed-3c004e373a04)
+![IMG_3761](https://github.com/user-attachments/assets/7ca4304b-1a90-41cb-b93b-f24832c2848f)
 
 ## 🚀 Features
 
