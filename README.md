@@ -1,47 +1,72 @@
-# Echo-32![IMG_3754](https://github.com/user-attachments/assets/8ca6e15a-412a-45c2-ac06-b9eac08cb263)
+# Echo-32 🔊📡
 
-ESP32 ESP-NOW Chat Device with OLED &amp; Virtual Keyboard
-## Features
-- Wireless chat between ESP32 boards using ESP-NOW
-- OLED display for chat messages and virtual keyboard
-- Simple button interface:
-  - Next button → cycles characters
-  - Select button → adds character
-  - Send button → sends message
-- Stores last 4 messages in chat buffer
+**Echo-32** is a standalone ESP32-based wireless chat device built using **ESP-NOW** and an **OLED display**.  
+It allows two ESP32 boards to discover each other and exchange messages **without Wi-Fi or internet**.
 
-## Hardware
-- 2 × ESP32 boards (Echo-32 works with any ESP32)
-- 1 × OLED display (128x64)
-- 3 × push buttons
-- Jumper wires
+---
 
-| OLED Pin | ESP32 Pin |
-| -------- | --------- |
-| VCC      | 3.3V      |
-| GND      | GND       |
-| SCL      | GPIO 22   |
-| SDA      | GPIO 21   |
-| Button Function  | ESP32 Pin | Connection Notes                           |
-| ---------------- | --------- | ------------------------------------------ |
-| Next character   | GPIO 25   | Connect one side to pin, other side to GND |
-| Select character | GPIO 26   | Connect one side to pin, other side to GND |
-| Send message     | GPIO 27   | Connect one side to pin, other side to GND |
+## 🚀 Features
 
+- ESP-NOW based communication (no router required)
+- Broadcast mode & peer-to-peer chat
+- Device discovery system
+- On-device typing using 3 buttons
+- OLED UI (menu, chat, peer list)
+- Audio notification using buzzer
+- Long-range mode enabled
 
-Each board must have peer MAC set in firmware:
-uint8_t peerMAC[6] = {0xAA,0xBB,0xCC,0xDD,0xEE,0xFF};
-To find a board’s MAC, use this temporary sketch:
-```
-#include <WiFi.h>
+---
 
-void setup() {
-  Serial.begin(115200);
-  WiFi.mode(WIFI_STA);
-  Serial.println("ESP32 MAC Address:");
-  Serial.println(WiFi.macAddress());
-}
+## 🧠 How It Works
 
-void loop() {}
+### Modes
+- **Broadcast** – Messages are sent to all nearby Echo-32 devices
+- **Discover** – Scans for nearby devices and locks onto a selected peer
 
-```
+### Controls
+| Button | Function |
+|------|---------|
+| NEXT | Scroll menu / characters |
+| SELECT | Select menu / type character |
+| SEND | Double tap = send message<br>Hold = exit chat |
+
+---
+
+## 🛠 Hardware Used
+
+- ESP32 Dev Board
+- 128×64 OLED Display (SSD1306, I2C)
+- 3 Push Buttons
+- Active-Low Buzzer
+- Jumper wires & breadboard
+
+---
+
+## 📦 Libraries Required
+
+- WiFi.h  
+- esp_now.h  
+- esp_wifi.h  
+- Adafruit_GFX  
+- Adafruit_SSD1306  
+
+---
+
+## 📌 Version History
+
+- **v1.0** – Initial ESP-NOW chat prototype
+- **v1.1** – UI improvements, discovery system, buzzer alerts
+
+---
+
+## 📷 Project Status
+
+🧪 Actively developed  
+📈 More features planned (message history, better UI, encryption)
+
+---
+
+## 👤 Author
+
+**Tanay Tole**  
+Electronics | ESP32 | Embedded Systems
